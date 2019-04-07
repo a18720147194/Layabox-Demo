@@ -1,5 +1,5 @@
 //创建舞台，默认背景色是黑色的
-Laya.init(600, 300); 
+Laya.init(1136,640); 
 var txt = new Laya.Text(); 
 //设置文本内容
 txt.text = "Hello Layabox";  
@@ -13,7 +13,18 @@ txt.strokeColor = "#FFFFFF";
 //设置为粗体
 txt.bold = true;  
 //设置文本的显示起点位置X,Y
-txt.pos(60,100);  
+txt.pos(0,0);  
+//设置文本区背景
+txt.bgColor = "#c30c30";
+//设置文本的宽高
+txt.width = 1400;
+txt.height = 400;
+//设置自动换行
+txt.wordWrap = true;
+//设置文本水平居中
+txt.align = "center";
+//设置文本垂直居中
+txt.valign = "middle";
 //设置舞台背景色
 Laya.stage.bgColor  = '#23238E';  
 //将文本内容添加到舞台 
